@@ -38,7 +38,7 @@
 &lt;/html&gt;
 </pre>
       <li>Enter whatever text or html you want in the file.  You can view the
-      changes you're making in your browser by running <code>python -m
+      changes you're making locally by running <code>python -m
         SimpleHTTPServer 8000</code> and then navigating to
       http://localhost:8000 in your browser.</li>
       <li>Now run the following commands:
@@ -48,8 +48,47 @@ git commit -m "Initial commit"
 git push -u origin master
 </pre>
       </li>
+      <li>Go to http://yourusername.github.io.  You should now see your site!
+      Congratulations, you put something online.
+      </li>
+      <li>If you want to add your own domain name, create a file called "CNAME" in
+      all caps.  Then add a single line that says 'www.yourdomainname.com' to
+      the file.  For example the CNAME file for this website looks like this:
+<pre>
+www.makethisinanhour.com
+</pre>
+      View details on <a
+        href="https://help.github.com/articles/adding-a-cname-file-to-your-repository/">CNAME
+        configuration</a> here.</li>
+      <li>Like before, push your changes to Github.
+<pre>
+git add .
+git commit -m "Add CNAME"
+git push
+</pre>
+      </li>
+      <li>Now login to http://namecheap.com and click
+        on the domain you want under <a
+        href="https://manage.www.namecheap.com/myaccount/domain-list.asp?from=memberhome">the
+        list of your domains</a>.  The list of domains should look like this:
+
+        <img src="/img/yourdomains.png"/>
+
+        <p>After clicking on your domain, you should see a link that says "All Host
+        Records" on the left sidebar underneath "Host Management".  Click this.
+        Now you should see the default records that Namecheap adds for your
+        site.</p>
+
+        <img src="/img/oldrecords.png"/>
+
+        <p>Modify your records to look like this (with username replaced by your
+        username of course):</p>
+
+        <img src="img/records.png"/>
+      </li>
       <li>
-        
+        After waiting for your changes to propagate, you will be able to see
+      your website on your domain!  Congrats :)
       </li>
     </ol>
   </body>
