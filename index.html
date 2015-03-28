@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Make This In An Hour</title>
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  </head>
+  <body>
+    <h1 class="text-center">Make This In An Hour</h1>
+    <ol>
+      <li>Go to <a href="http://namecheap.com">namecheap.com</a> and register a
+      domain.  This is optional and only if you want a custom domain name.</li>
+      <li>Make a <a href="https://github.com/join">Github account</a></li>
+      <li>Download <a href="http://git-scm.com/downloads">Git</a>.</li>
+      <li>Create a directory to hold your website and cd into it.  <code>mkdir my-site && cd
+        my-site</code>.  All future commands will assume you are within this
+      directory.</li>
+      <li>Make <a href="https://github.com/new">a new Github repository</a> for your site titled <your
+      username>.github.io.  For example, my Github account is smilli, so my
+      repository is named smilli.github.io.</li>
+      <li>While in the directory for your website run <code>git init</code> and
+      <code>git remote add origin
+        https://github.com/username/username.github.io.git</code> with username
+      replaced by your username.</li>
+      <li>Make a file called "index.html" in your website's folder with the HTML
+      for your main page.  Don't spend long on this; it can be as simple as the following:</li>
+<pre>
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;YOUR SITE TITLE&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot;
+  href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;YOUR SITE TITLE&lt;/h1&gt;
+  &lt;p&gt;Your text blahblahbhalbha&lt;/p&gt;
+  &lt;p&gt;Another paragraph!  Maybe more text!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+      <li>Enter whatever text or html you want in the file.  You can view the
+      changes you're making in your browser by running <code>python -m
+        SimpleHTTPServer 8000</code> and then navigating to
+      http://localhost:8000 in your browser.</li>
+      <li>Now run the following commands:
+<pre>
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+</pre>
+      </li>
+      <li>
+        
+      </li>
+    </ol>
+  </body>
+</html>
