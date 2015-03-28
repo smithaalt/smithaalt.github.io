@@ -5,12 +5,27 @@
     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   </head>
   <body>
+  <div class="container">
     <h1 class="text-center">Make This In An Hour</h1>
+    <p>One of my friends has been saying for a couple months that he would make his
+    website over spring break.  Now it's the end of spring break and he hasn't
+    started.  His birthday is tomorrow, and I've decided to be an <s>asshole</s>
+    good friend and give the gift of accountability by writing down step-by-step
+    instructions to make it as simple as possible.</p>
+
+    <p>It really only takes an hour to make a website.  I know because I timed
+    myself doing the following and the whole process took me just under an hour
+    to make this website.  (I even did the registering a new domain and
+    creating a new Github account for a good measure!)  You can view the code
+    for this website on <a
+      href="http://github.com/smilli/makethisinanhour">Github</a>.</p>
+
     <ol>
       <li>Go to <a href="http://namecheap.com">namecheap.com</a> and register a
       domain.  This is optional and only if you want a custom domain name.</li>
-      <li>Make a <a href="https://github.com/join">Github account</a></li>
-      <li>Download <a href="http://git-scm.com/downloads">Git</a>.</li>
+      <li>Make a <a href="https://github.com/join">Github account</a> and
+      download <a href="http://git-scm.com/downloads">Git</a> if you haven't
+      already.</li>
       <li>Create a directory to hold your website and cd into it.  <code>mkdir my-site && cd
         my-site</code>.  All future commands will assume you are within this
       directory.</li>
@@ -27,6 +42,7 @@
 &lt;html&gt;
 &lt;head&gt;
   &lt;title&gt;YOUR SITE TITLE&lt;/title&gt;
+  &lt;-- Add some style to your site, see http://getbootstrap.com for details --&gt;
   &lt;link rel=&quot;stylesheet&quot;
   href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css&quot;&gt;
 &lt;/head&gt;
@@ -52,10 +68,10 @@ git push -u origin master
       Congratulations, you put something online.
       </li>
       <li>If you want to add your own domain name, create a file called "CNAME" in
-      all caps.  Then add a single line that says 'www.yourdomainname.com' to
-      the file.  For example the CNAME file for this website looks like this:
+      all caps.  Then add a single line that says 'yourdomainname.com' (no http
+      or www) to the file.  For example the CNAME file for this website looks like this:
 <pre>
-www.makethisinanhour.com
+makethisinanhour.com
 </pre>
       View details on <a
         href="https://help.github.com/articles/adding-a-cname-file-to-your-repository/">CNAME
@@ -90,6 +106,7 @@ git push
         After the DNS changes propagate, you will be able to see
       your website on your domain!  Congrats :)
       </li>
-    </ol>
+      </ol>
+    </div>
   </body>
 </html>
